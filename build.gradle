@@ -45,6 +45,7 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-jetty') {
 		exclude group: 'org.eclipse.jetty.websocket'
 	}
+	compile('org.springframework:springloaded')
 	testCompile('org.springframework.boot:spring-boot-starter-test') 
 }
 

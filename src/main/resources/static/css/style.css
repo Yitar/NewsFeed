@@ -3,12 +3,12 @@
     E-mail : Coder@iMomen.com
 */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
-	blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
-	em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
-	b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
-	table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
-	details, embed, figure, figcaption, footer, header, menu, nav,
-	output, ruby, section, summary, time, mark, audio, video {
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+details, embed, figure, figcaption, footer, header, hgroup, menu, nav,
+output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 1;
@@ -17,8 +17,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
 	vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure, footer, header,
-	menu, nav, section {
+article, aside, details, figcaption, figure, footer, header, hgroup,
+menu, nav, section {
 	display: block;
 }
 
@@ -86,11 +86,11 @@ a:hover {
 	background: #fff;
 	border-radius: 3px;
 	-webkit-box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px
-		rgba(0, 0, 0, 0.3);
+	rgba(0, 0, 0, 0.3);
 	-moz-box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px
-		rgba(0, 0, 0, 0.3);
+	rgba(0, 0, 0, 0.3);
 	box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px
-		rgba(0, 0, 0, 0.3);
+	rgba(0, 0, 0, 0.3);
 }
 
 .register:before {
@@ -121,7 +121,7 @@ a:hover {
 }
 
 .register input[type=text], .register input[type=password], .register select,
-	.register textarea {
+.register textarea {
 	width: 278px;
 }
 
@@ -175,7 +175,7 @@ input {
 }
 
 input[type=text], input[type=password], .register select, .register textarea
-	{
+{
 	margin: 5px;
 	padding: 0 10px;
 	height: 34px;
@@ -185,7 +185,7 @@ input[type=text], input[type=password], .register select, .register textarea
 	border-style: solid;
 	border-color: #c4c4c4 #d1d1d1 #d4d4d4;
 	border-radius: 3px; -
-	-webkit-border-radius: 5px;
+-webkit-border-radius: 5px;
 	outline: 3px solid rgba(200, 105, 137, 0.09);
 	-moz-outline-radius: 7px;
 	-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
@@ -217,10 +217,10 @@ input[type=submit] {
 	box-sizing: content-box;
 	background-color: #7D0F33;
 	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #AA1E4D),
-		color-stop(100%, #7D0F33));
+	color-stop(100%, #7D0F33));
 	background-image: -webkit-linear-gradient(top, #AA1E4D, #7D0F33);
-	background-image: -moz-linear-gradient(top, #AA1E4D, #7D0F33);
-		background-image: -ms-linear-gradient(top, #AA1E4D, #7D0F33);
+	background-image: -moz-linear-gradient(center top, #AA1E4D, #7D0F33)
+	background-image: -ms-linear-gradient(top, #AA1E4D, #7D0F33);
 	background-image: -o-linear-gradient(top, #AA1E4D, #7D0F33);
 	background-image: linear-gradient(top, #AA1E4D, #7D0F33);
 	-webkit-box-shadow: 0 1px #CD4170 inset, 0 1px 2px #93284C;

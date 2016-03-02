@@ -43,7 +43,7 @@
             <p class="terms">
                 <label>
                     <input type="checkbox" name="remember_me" id="remember_me">
-                    I accept Bloomington Times Terms & Condition
+                    I accept NewsFeed Terms & Condition
                 </label>
             </p>
             <p class="submit"><input type="submit" name="commit" value="Register"></p>

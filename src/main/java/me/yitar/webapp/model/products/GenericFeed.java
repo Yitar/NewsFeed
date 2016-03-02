@@ -14,11 +14,7 @@ public class GenericFeed extends Feed {
         fdao = new FeedDAO();
     }
 
-    /*
-     * (non-Javadoc)
-     *
-     * @see com.se.newspaperapp.model.IFeed#getFeeds()
-     */
+
     @Override
     public ArrayList<Feed> getFeeds(int channel) {
         ArrayList<Feed> feeds = null;

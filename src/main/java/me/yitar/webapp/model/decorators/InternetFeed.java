@@ -15,11 +15,7 @@ public class InternetFeed extends FeedDecorator {
         feeds = feedslist;
     }
 
-    /*
-     * (non-Javadoc)
-     *
-     * @see com.se.newspaperapp.model.FeedDecorator#getFeed()
-     */
+
     @Override
     public ArrayList<Feed> getFeeds(int channel) {
         for (Feed f : feeds) {

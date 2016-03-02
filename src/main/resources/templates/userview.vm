@@ -16,18 +16,18 @@
 <body>
 <div class="container">
     <section class="register">
-        <h2>Hi ${sessionUser.firstName} ${sessionUser.lastName}</h2>
+        <h2>Hi $!{sessionUser.firstName} $!{sessionUser.lastName}</h2>
         <h1>User View</h1>
         <div class="reg_section personal_info">
             <table border="1">
                 <tr>
                     <th><h3>Internet Headlines</h3></th>
                 </tr>
-                <c:forEach items="${internetfeeds}" var="feed">
+                #foreach($internet in $!{internetFeeds})
                     <tr>
-                        <td>${feed.headline}</td>
+                        <td>$!{feed.headline}</td>
                     </tr>
-                </c:forEach>
+                #end
             </table>
         </div>
         <div class="reg_section personal_info">
@@ -35,11 +35,11 @@
                 <tr>
                     <th><h3>Newspaper Headlines</h3></th>
                 </tr>
-                <c:forEach items="${newspaperfeeds}" var="feed">
+                #foreach($newspaper in $!{newspaperFeeds})
                     <tr>
-                        <td>${feed.headline}</td>
+                        <td>$!{feed.headline}</td>
                     </tr>
-                </c:forEach>
+                #end
             </table>
         </div>
         <div class="reg_section personal_info">
@@ -47,17 +47,17 @@
                 <tr>
                     <th><h3>Twitter Headlines</h3></th>
                 </tr>
-                <c:forEach items="${twitterfeeds}" var="feed">
+                #foreach($twitter in $twitterFeeds)
                     <tr>
-                        <td>${feed.headline}</td>
+                    <td>$!{twitterfeed.headline}</td>
                     </tr>
-                </c:forEach>
+                #end
             </table>
         </div>
         <p class="terms">
             <label>
                 <!-- <input type="checkbox" name="remember_me" id="remember_me"> -->
-                ${message}
+                $!{message}
             </label>
         </p>
         <p class="submit"></p>

@@ -16,7 +16,7 @@
 <body>
 <div class="container">
     <section class="register">
-        <h2>Hi ${sessionUser.firstName} ${sessionUser.lastName}</h2>
+        <h2>Hi $!{sessionUser.firstName} $!{sessionUser.lastName}</h2>
         <h1>Add New Editor</h1>
         <form method="post" action="adduser">
             <div class="reg_section personal_info">
@@ -32,7 +32,7 @@
                 <input type="password" name="confirm" value="" placeholder="Confirm Password">
             </div>
             <div class="reg_section password">
-                <h3>Your Address</h3>
+                <h3>Your category</h3>
                 <select name="department">
                     <option value="1">Business</option>
                     <option value="2">Entertainment</option>

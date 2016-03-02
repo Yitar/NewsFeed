@@ -18,7 +18,7 @@ public class DatabaseHandlerSingleton {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/bonusdb", "root", "root");
+                    "jdbc:mysql://localhost:3306/NewsFeed", "root", "root");
             con.createStatement();
         } catch (SQLException ex) {
             System.out.println("cannot query the database: " + ex.getMessage());

@@ -17,7 +17,7 @@
 <body>
 <div class="container" style="width:550px;"">
 <section class="register">
-    <h2>Hi ${sessionUser.firstName} ${sessionUser.lastName}</h2>
+    <h2>Hi $!{sessionUser.firstName} $!{sessionUser.lastName}</h2>
     <h1>Super User View</h1>
     <h2>Manage Editors</h2>
     <div class="reg_section personal_info">
@@ -31,17 +31,17 @@
                 <th><h3>Department</h3></th>
                 <th></th>
             </tr>
-            <c:forEach items="${users}" var="user">
+            #foreach($users in $!{user})
                 <tr>
-                    <td>${user.firstName}</td>
-                    <td>${user.lastName}</td>
-                    <td>${user.contactNumber}</td>
-                    <td>${user.email}</td>
-                    <td>${user.role}</td>
-                    <td>${user.department}</td>
-                    <td><a href="deleteuser?userId=${user.userId}"> delete </a></td>
+                    <td>$!{user.firstName}</td>
+                    <td>$!{user.lastName}</td>
+                    <td>$!{user.contactNumber}</td>
+                    <td>$!{user.email}</td>
+                    <td>$!{user.role}</td>
+                    <td>$!{user.department}</td>
+                    <td><a href="deleteuser?userId=$!{user.userId}"> delete </a></td>
                 </tr>
-            </c:forEach>
+            #end
         </table>
     </div>
     <div class="reg_section password">
@@ -53,7 +53,7 @@
     </div>
     <p class="terms">
         <label> <!-- <input type="checkbox" name="remember_me" id="remember_me"> -->
-            ${message}
+            $!{message}
         </label>
     </p>
 </section>

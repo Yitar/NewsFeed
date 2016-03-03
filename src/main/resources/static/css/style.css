@@ -11,7 +11,7 @@ details, embed, figure, figcaption, footer, header, menu, nav,
 output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 1;
+	border: 1px;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -48,7 +48,7 @@ table {
 
 /* Page */
 body {
-	background: #2F0916;
+	background: #a7c5cd;
 	font-family: "Trebuchet MS", tahoma;
 }
 
@@ -83,7 +83,7 @@ a:hover {
 	position: relative;
 	margin-top: 20px;
 	padding: 20px 20px 20px;
-	background: #fff;
+	background: #8b84a3;
 	border-radius: 3px;
 	-webkit-box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px
 	rgba(0, 0, 0, 0.3);
@@ -216,13 +216,13 @@ input[type=submit] {
 	-moz-box-sizing: content-box;
 	box-sizing: content-box;
 	background-color: #7D0F33;
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #AA1E4D),
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ace),
 	color-stop(100%, #7D0F33));
-	background-image: -webkit-linear-gradient(top, #AA1E4D, #7D0F33);
-	background-image: -moz-linear-gradient(top, #AA1E4D, #7D0F33);
-	background-image: -ms-linear-gradient(top, #AA1E4D, #7D0F33);
-	background-image: -o-linear-gradient(top, #AA1E4D, #7D0F33);
-	background-image: linear-gradient(top, #AA1E4D, #7D0F33);
+	background-image: -webkit-linear-gradient(top, #ace, #f96 80%, #f96);
+	background-image: -moz-linear-gradient(top, #ace, #f96 80%, #f96);
+	background-image: -ms-linear-gradient(top, #ace, #f96 80%, #f96);
+	background-image: -o-linear-gradient(top, #ace, #f96 80%, #f96);
+	background-image: linear-gradient(top, #ace, #f96 80%, #f96);
 	-webkit-box-shadow: 0 1px #CD4170 inset, 0 1px 2px #93284C;
 	-moz-box-shadow: 0 1px #CD4170 inset, 0 1px 2px #93284C;
 	box-shadow: 0 1px #CD4170 inset, 0 1px 2px #93284C;

@@ -26,7 +26,7 @@
                     <th></th>
                     <th></th>
                 </tr>
-                #foreach($feeds in $!{feed})
+                #foreach($feed in $!{feeds})
                     <tr>
                     <td>${feed.headline}</td>
                         <td><a href="editfeed?id=${feed.id}"> Edit </a></td>

@@ -32,7 +32,7 @@
                 <input type="password" name="confirm" value="" placeholder="Confirm Password">
             </div>
             <div class="reg_section password">
-                <h3>Your category</h3>
+                <h3>Your department</h3>
                 <select name="department">
                     <option value="1">Business</option>
                     <option value="2">Entertainment</option>

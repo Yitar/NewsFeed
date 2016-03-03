@@ -172,6 +172,10 @@ public class UserController implements IUserController {
         u.setRole(1);
         u.setDepartment(department);
         int res = u.addUser(u);
+        if (res != -1)
+            model.addAttribute("message", "User Successfully Created");
+        else
+            model.addAttribute("message", "Failure in user creation");
 
         return "redirect:home";
     }
@@ -182,6 +186,10 @@ public class UserController implements IUserController {
     public String deleteUser(int userId, Model model, HttpSession session) {
 
         int res = uh.deleteUser(userId);
+        if (res != -1)
+            model.addAttribute("message", "User Successfully deleted");
+        else
+            model.addAttribute("message", "Failure in user delete");
 
         return "redirect:home";
     }

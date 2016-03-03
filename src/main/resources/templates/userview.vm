@@ -23,9 +23,9 @@
                 <tr>
                     <th><h3>Internet Headlines</h3></th>
                 </tr>
-                #foreach($internet in $!{internetFeeds})
+                #foreach($internet in $!{internetfeeds})
                     <tr>
-                        <td>$!{feed.headline}</td>
+                        <td>$!{internet.headline}</td>
                     </tr>
                 #end
             </table>
@@ -35,9 +35,9 @@
                 <tr>
                     <th><h3>Newspaper Headlines</h3></th>
                 </tr>
-                #foreach($newspaper in $!{newspaperFeeds})
+                #foreach($newspaper in $!{newspaperfeeds})
                     <tr>
-                        <td>$!{feed.headline}</td>
+                        <td>$!{newspaper.headline}</td>
                     </tr>
                 #end
             </table>
@@ -47,9 +47,9 @@
                 <tr>
                     <th><h3>Twitter Headlines</h3></th>
                 </tr>
-                #foreach($twitter in $twitterFeeds)
+                #foreach($twitter in $twitterfeeds)
                     <tr>
-                    <td>$!{twitterfeed.headline}</td>
+                    <td>$!{twitter.headline}</td>
                     </tr>
                 #end
             </table>

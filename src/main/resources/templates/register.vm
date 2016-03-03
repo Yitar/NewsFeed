@@ -16,7 +16,7 @@
 <body>
 <div class="container">
     <section class="register">
-        <h1>Register on Bloomington Times</h1>
+        <h1>Register on NewsFeed!</h1>
         <form method="post" action="register">
             <div class="reg_section personal_info">
                 <h3>Your Personal Information</h3>

@@ -31,7 +31,7 @@
                 <th><h3>Department</h3></th>
                 <th></th>
             </tr>
-            #foreach($users in $!{user})
+            #foreach($user in $!{users})
                 <tr>
                     <td>$!{user.firstName}</td>
                     <td>$!{user.lastName}</td>
